@@ -1,0 +1,81 @@
+.simple-list-example-scrollspy {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.simple-list-example-scrollspy a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.simple-list-example-scrollspy a:hover {
+  background-color: #e9ecef;
+  color: #000;
+}
+
+.scrollspy-example h4 {
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.scrollspy-example p {
+  margin-bottom: 30px;
+  color: #555;
+}
+body {
+  background-color: #000 !important;
+  color: rgb(171, 141, 63) !important;
+}
+#scrollable-manufacturers {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+#scrollable-manufacturers a {
+  color: rgb(171, 141, 63); /* Text color for links */
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin-right: 10px;
+}
+
+#scrollable-manufacturers a:hover {
+  background-color: #555;
+}
+
+.card {
+  background-color: #333; /* Dark background color for cards */
+  color: rgb(171, 141, 63); /* Text color for cards */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card p,
+.card a {
+  color: rgb(171, 141, 63); /* Set text color inside the card */
+}
+
+.scrollspy-example {
+  color: rgb(
+    171,
+    141,
+    63
+  ); /* Set text color for the content inside the scrollspy */
+}
+.custom-btn {
+  background-color: #000; /* Set button background color to black */
+  color: rgb(171, 141, 63); /* Set button text color to gold */
+}
+
+.custom-btn:hover {
+  background-color: #140303; /* Change button background color on hover */
+  color: #fff; /* Change button text color on hover */
+}

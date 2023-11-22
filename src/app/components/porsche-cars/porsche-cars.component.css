@@ -1,0 +1,67 @@
+#vehicles .card {
+  height: 100%;
+}
+
+.v-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* or use 'contain' based on your preference */
+}
+
+.v {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.v-title {
+  margin-bottom: 1rem;
+}
+
+.v-text {
+  flex-grow: 1;
+}
+
+.list-group-item {
+  border: none;
+}
+
+body {
+  background-color: #000 !important;
+  color: rgb(171, 141, 63) !important;
+}
+
+.card {
+  background-color: rgb(124, 124, 124); /* White background color */
+  color: rgb(171, 141, 63); /* Text color */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensure the border-radius is applied to the image */
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-body {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black layer */
+  padding: 20px; /* Adjust as needed */
+}
+
+.card-title,
+.card-text {
+  color: rgb(171, 141, 63); /* Text color for the title and text */
+}
+
+.list-group-item {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent black background for list items */
+  color: rgb(171, 141, 63); /* Text color for list items */
+}

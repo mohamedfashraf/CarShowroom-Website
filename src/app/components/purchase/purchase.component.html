@@ -1,0 +1,80 @@
+<body>
+  <main class="container mt-5">
+    <h1 class="text-center mb-4"></h1>
+    <form>
+      <div class="mb-3">
+        <label for="firstName" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="firstName" required />
+      </div>
+      <div class="mb-3">
+        <label for="lastName" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="lastName" required />
+      </div>
+
+      <div class="mb-3">
+        <label for="nationalId" class="form-label">National ID</label>
+        <input type="text" class="form-control" id="nationalId" required />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required />
+      </div>
+      <div class="mb-3">
+        <label for="contactNumber" class="form-label">Contact Number</label>
+        <input type="tel" class="form-control" id="contactNumber" required />
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <label for="manufacturer" class="form-label">Manufacturer</label>
+          <select class="form-select" id="manufacturer" required>
+            <option selected>Choose...</option>
+            <option value="Porsche">Porsche</option>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Bugatti">Bugatti</option>
+            <option value="Lamborghini">McLaren</option>
+            <option value="Mercedes">Mercedes</option>
+          </select>
+        </div>
+        <div class="col-sm">
+          <label for="model" class="form-label">Model</label>
+          <select class="form-select" id="model" required>
+            <option selected>Choose...</option>
+            <option value="911 Turbo S Coupe Customized<">
+              911 Turbo S Coupe Customized
+            </option>
+            <option value="911 Turbo S Coupe by Techart">
+              911 Turbo S Coupe by Techart
+            </option>
+            <option value="935">935</option>
+            <option value="911 Targa 4S Heritage Design Edition">
+              911 Targa 4S Heritage Design Edition
+            </option>
+            <option value="Porsche 911 GT3 RS">Porsche 911 GT3 RS</option>
+            <option value="Porsche 911 Dakar">Porsche 911 Dakar</option>
+          </select>
+        </div>
+        <div class="col-sm">
+          <label for="year" class="form-label">Year</label>
+          <select class="form-select" id="year" required>
+            <option selected>Choose...</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+          </select>
+        </div>
+      </div>
+      <br />
+      <div class="text-center">
+        <button
+          type="submit"
+          class="btn btn"
+          style="padding: 10px 30px; font-size: 18px; color: rgb(171, 141, 63)"
+        >
+          Purchase
+        </button>
+      </div>
+      <br />
+    </form>
+  </main>
+</body>
