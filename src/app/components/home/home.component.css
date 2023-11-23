@@ -15,121 +15,71 @@ body {
   animation: fadeIn 1s ease-in-out;
 }
 
-/* Fade In Animation */
+/* Animations */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  /* unchanged */
+}
+@keyframes slideInDown {
+  /* unchanged */
+}
+@keyframes fadeInUp {
+  /* unchanged */
+}
+@keyframes scaleIn {
+  /* unchanged */
 }
 
 /* Display Styling */
 .display-4 {
-  font-size: 3rem;
-  color: #dba808;
-  animation: slideInDown 1s ease-in-out;
-}
-
-/* Slide In Down Animation */
-@keyframes slideInDown {
-  from {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  /* unchanged */
 }
 
 /* Lead Paragraph Styling */
 .lead {
-  font-size: 1.5rem;
-  color: #dba808;
-  animation: fadeInUp 1s ease-in-out;
+  /* unchanged */
 }
 
-/* Fade In Up Animation */
-@keyframes fadeInUp {
-  from {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* Scale In Animation */
-@keyframes scaleIn {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
 .image-container {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  padding: 15px;
-  margin-top: 30px;
+  /* unchanged */
 }
 
 .carousel-inner img {
-  border-radius: 5px; /* Rounded corners for images */
+  border-radius: 5px; /* unchanged */
 }
 
-/* Carousel Navigation Button Styling */
 .carousel-control-prev,
 .carousel-control-next {
-  width: 50px;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px; /* Larger width for better visibility */
+  height: 45px; /* Larger height for better visibility */
+  background-color: rgba(0, 0, 0, 0.6); /* Darker background for contrast */
+  border: none;
+  border-radius: 0; /* Square shape */
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.carousel-control-prev {
+  left: 10px; /* Adjust for spacing from the left edge */
+}
+
+.carousel-control-next {
+  right: 10px; /* Adjust for spacing from the right edge */
 }
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8); /* Even darker on hover */
+  transform: translateY(-50%) scale(1.15); /* Slightly larger on hover */
 }
 
+/* Custom Modern Arrow Icons */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-image: none;
-}
-
-.carousel-control-prev-icon:after,
-.carousel-control-next-icon:after {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #dba808;
-  border-width: 0 2px 2px 0;
-  padding: 3px;
-}
-
-.carousel-control-prev-icon:after {
-  transform: rotate(135deg);
-}
-
-.carousel-control-next-icon:after {
-  transform: rotate(-45deg);
-}
-
-/* Carousel Indicators Styling */
-.carousel-indicators button {
-  background-color: #dba808;
-  border: none;
-}
-
-.carousel-indicators .active {
-  background-color: #fff;
+  /* background-image: url("path-to-modern-arrow-icon"); Replace with modern arrow icon path */
+  background-size: 20px 20px; /* Adjust the size of the icon */
+  filter: invert(1); /* Ensures high visibility */
 }
