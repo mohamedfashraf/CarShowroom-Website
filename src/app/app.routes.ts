@@ -9,6 +9,10 @@ import { PorscheCarsComponent } from './components/porsche-cars/porsche-cars.com
 
 export const routes: Routes = [
   {
+    path: '',
+    component: HomeComponent,
+  },
+  {
     path: 'home',
     title: 'Home page',
     component: HomeComponent,
