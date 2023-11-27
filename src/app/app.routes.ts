@@ -6,6 +6,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PurchaseComponent } from './components/purchase/purchase.component';
 import { PorscheCarsComponent } from './components/porsche-cars/porsche-cars.component';
+import { MercedesCarsComponent } from './components/mercedes-cars/mercedes-cars.component';
 
 export const routes: Routes = [
   {
@@ -47,4 +48,7 @@ export const routes: Routes = [
     title: 'Porsche Cars page',
     component: PorscheCarsComponent,
   },
+  {
+    path: 'mercedes-cars',
+  title:},
 ];
