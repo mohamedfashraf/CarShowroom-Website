@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-cars',
-  standalone: true,
-  imports: [CommonModule, RouterLink],
-  templateUrl: './cars.component.html',
-  styleUrl: './cars.component.css',
+    selector: 'app-cars',
+    imports: [CommonModule, RouterLink],
+    templateUrl: './cars.component.html',
+    styleUrl: './cars.component.css'
 })
 export class CarsComponent {
   porscheLogo = 'assets/Images/CarsLogo/Porsche_logo.svg.png';
